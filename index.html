@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+
+  <body>
+    <div id="warpper">
+        <div id="watch-time"></div>
+        <div id="watch-day"></div>
+        <div class="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="login hidden">
+            <form id="login-form">
+            <input type="text" name="loginName" required maxlength="20" placeholder="로그인 하세요."/>
+            <button id="loginBtn">로그인</button>
+            </form>
+        </div>
+        <div class="logout hidden">
+            <form id="logout-form">
+                <span></span>
+                <span><button id="logoutBtn">로그아웃</button></span>
+            </form>
+        </div>
+
+        <div class="todo hidden">
+            <form id="todo-form">
+                <input type="text" name="todo" size="50" required maxlength="100" placeholder="할일을 100자 이내로 작성해 주세요."/>
+                <button id="todoBtn">작성</button>
+            </form>
+            <div id="todo-list">
+                <ul></ul>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/watch.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/randomimage.js"></script>
+    <script src="js/geolocation.js"></script>
+  </body>
+</html>
