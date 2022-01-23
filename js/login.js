@@ -11,6 +11,7 @@ function doLogin(event) {
   const loginName = loginform.querySelector("input");
   localStorage.setItem(KEY_LOGIN_NAME, loginName.value);
   logout.querySelector("span:first-child").innerText = `안녕하세요! ${loginName.value}`;
+  
   loginName.value = "";
   login.classList.add(KEY_CLASS_HIDDEN);
   logout.classList.remove(KEY_CLASS_HIDDEN);
